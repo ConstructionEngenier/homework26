@@ -1,0 +1,11 @@
+version: "3.10"
+
+services:
+  api:
+    image: amikhailov5593/homework_26:version-1
+    ports:
+      - 80:80
+    volumes:
+      - ./volumes/:/code/volumes
+    env_file:
+      - ./envs.env
